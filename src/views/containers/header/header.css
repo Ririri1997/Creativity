@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  max-width: 1800px;
+  margin: auto;
+  width: 95%;
+}
+.header-logo {
+  max-width: 259px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .header-logo {
+    max-width: 120px;
+  }
+}/*# sourceMappingURL=header.css.map */

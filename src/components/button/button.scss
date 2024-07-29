@@ -1,0 +1,61 @@
+.button {
+ padding: 10px 20px 12px 20px;
+ border-radius: 12px;
+ text-decoration: none;
+ font-family: Nunito Sans;
+ font-size: 26px;
+ font-style: normal;
+ font-weight: 600;
+ line-height: 130%;
+ background: #FAFAFA;
+ color: #4D4D4D;
+ cursor: pointer;
+ transition: 250ms;
+ &:hover{
+  background: #E0E0E0;
+  transition: 250ms;
+ }
+}
+.primary{
+ max-height: 56px;
+ background: #C93502;
+ color: #FAFAFA;
+ transition: 250ms;
+ &:hover{
+  background: #B12F02;
+  transition: 250ms;
+ }
+}
+.secondary{
+ padding: 20px 24px;
+ width: 100%;
+}
+button{
+ border: none;
+}
+@media (max-width: 1600px){
+ .button{
+  font-size: 20px;
+ }
+}
+
+
+@media (max-width: 768px){
+ .button{
+  font-size: 17px;
+ }
+ .primary-header{
+  display: block;
+  margin-top: 3px;
+  background: none;
+  color: #E65725;
+  padding: 0;
+  font-family: 'Krasnodar-grotesk';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; 
+  &:hover{
+   background: none;
+  }
+ }
+}

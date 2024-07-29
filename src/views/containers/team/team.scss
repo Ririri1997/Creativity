@@ -1,0 +1,27 @@
+.team {
+ .slick{
+  &-slide {
+   padding-right: 30px;
+  }
+  &-slider{
+   height: 480px;
+   position: relative;
+   overflow: hidden;
+  }
+  &-list {
+   overflow: visible;
+  }
+  &-dots{
+   bottom: 0;
+   li{
+    margin: 0;
+   }
+  }
+ }
+}
+
+@media (max-width: 768px){
+ .team{
+  overflow: hidden;
+ }
+}

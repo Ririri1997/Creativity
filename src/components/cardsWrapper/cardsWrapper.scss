@@ -1,0 +1,63 @@
+.cards{
+ &-wrapper{
+  display: grid;
+  gap: 40px;
+  &-two{
+   grid-template-columns: repeat(2, 1fr);
+  }
+  &-three{
+   grid-template-columns: repeat(3, 1fr);
+  }
+  &-four{
+   grid-template-columns: repeat(4, 1fr);
+  }
+ }
+}
+
+@media (max-width: 1280px){
+ .cards{
+  &-wrapper{
+   &-three{
+    grid-template-columns: repeat(2, 1fr);
+   }
+  }
+ }
+}
+
+@media (max-width: 1024px){
+ .cards{
+  &-wrapper{
+   gap: 30px;
+   &-four{
+    grid-template-columns: repeat(2, 1fr);
+   }
+  }
+ }
+ .contacts{
+  .cards{
+   &-wrapper{
+    gap: 30px;
+    &-two{
+     grid-template-columns: repeat(1, 1fr);
+    }
+   }
+  }
+ }
+}
+
+@media (max-width: 768px){
+ .cards{
+  &-wrapper{
+   &-two{
+    grid-template-columns: repeat(1, 1fr);
+   }
+   &-three{
+    grid-template-columns: repeat(1, 1fr);
+   }
+   &-four{
+    grid-template-columns: repeat(1, 1fr);
+   }
+  }
+ }
+}
+

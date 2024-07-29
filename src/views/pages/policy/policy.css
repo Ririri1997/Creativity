@@ -1,0 +1,25 @@
+.policy {
+  margin-top: 100px;
+}
+.policy-info {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+.policy-info .title {
+  text-align: center;
+}
+.policy-info p:not(.title) {
+  margin-bottom: 32px;
+}
+.policy-info p:not(.title):last-child {
+  margin-bottom: 0;
+}
+.policy ol {
+  list-style: none;
+  counter-reset: li;
+}
+.policy li:before {
+  counter-increment: li;
+  content: counters(li, ".") ". ";
+}/*# sourceMappingURL=policy.css.map */

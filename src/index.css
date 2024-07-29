@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&display=swap");
+@font-face {
+  font-family: "Krasnodar-grotesk";
+  src: local("Krasnodar-grotesk"), url("../public/fonts/Krasnodar-grotesk.woff2") format("woff2");
+}
+* {
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F6F6F6;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  color: #292929;
+  font-family: "Krasnodar-grotesk";
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  max-width: 1400px;
+  margin: auto;
+  margin-bottom: 125px;
+}
+
+h2 {
+  color: #292929;
+  font-family: "Krasnodar-grotesk";
+  font-size: 76px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+  margin: 0;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+h3, .title {
+  margin: 0;
+  color: #292929;
+  font-family: Nunito Sans;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 12px;
+  opacity: 1;
+}
+
+p, input, textarea {
+  color: #6a6a6a;
+  font-family: Nunito Sans;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+a {
+  color: #FAFAFA;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section {
+  max-width: 1800px;
+  margin: auto;
+  width: 95%;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.bold {
+  color: #292929;
+  font-family: Nunito Sans;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.card {
+  border-radius: 64px;
+  background: #FFF;
+  overflow: hidden;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@media (max-width: 1600px) {
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 56px;
+  }
+  h3, .title {
+    font-size: 32px;
+  }
+  p, input, textarea {
+    font-size: 17px;
+  }
+  .button {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1440px) {
+  .card {
+    border-radius: 32px;
+  }
+  .card-mini {
+    border-radius: 24px;
+  }
+  section {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  h1 {
+    margin-bottom: 100px;
+  }
+  h2 {
+    margin-bottom: 50px;
+  }
+  h3, .title {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 1025px) {
+  section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  h1 {
+    margin-bottom: 70px;
+    font-size: 60px;
+  }
+  h2 {
+    margin-bottom: 40px;
+    font-size: 44px;
+  }
+  h3, .title {
+    font-size: 28px;
+  }
+  .bold {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+  }
+  h1 {
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+  h2 {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 38px;
+  }
+}/*# sourceMappingURL=index.css.map */

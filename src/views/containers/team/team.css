@@ -1,0 +1,23 @@
+.team .slick-slide {
+  padding-right: 30px;
+}
+.team .slick-slider {
+  height: 480px;
+  position: relative;
+  overflow: hidden;
+}
+.team .slick-list {
+  overflow: visible;
+}
+.team .slick-dots {
+  bottom: 0;
+}
+.team .slick-dots li {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .team {
+    overflow: hidden;
+  }
+}/*# sourceMappingURL=team.css.map */

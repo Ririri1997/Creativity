@@ -1,0 +1,23 @@
+.tag {
+  color: #292929;
+  font-family: Nunito Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  border-radius: 50px;
+  background: #F9EFEC;
+  padding: 4px 12px 6px 12px;
+  display: inline-block;
+  margin-right: 12px;
+  margin-top: 12px;
+}
+.tag:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 1600px) {
+  .tag {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=tag.css.map */

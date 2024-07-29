@@ -1,0 +1,117 @@
+.contacts-card {
+  border-radius: 48px;
+  background: #292929;
+  padding: 48px 48px 56px 48px;
+}
+.contacts-card h2, .contacts-card p, .contacts-card a, .contacts-card input, .contacts-card textarea, .contacts-card form .react-tel-input {
+  color: #929292;
+  text-align: left;
+}
+.contacts-card h2 {
+  color: #FAFAFA;
+  margin-bottom: 0;
+}
+.contacts-card a {
+  color: #FAFAFA;
+  text-decoration: none;
+}
+.contacts-card form p {
+  margin-bottom: 25px;
+}
+.contacts-card form input, .contacts-card form textarea, .contacts-card form .react-tel-input .form-control {
+  padding: 20px 24px;
+  border-radius: 8px;
+  border: 2px solid #909090;
+  background: transparent;
+  color: #FAFAFA;
+  width: 100%;
+}
+.contacts-card form input {
+  height: 67px;
+}
+.contacts-card form input:focus, .contacts-card form textarea:focus {
+  outline: none;
+}
+.contacts-card form input:focus, .contacts-card form textarea:focus, .contacts-card form input:hover, .contacts-card form textarea:hover, .contacts-card form .react-tel-input .form-control:hover, .contacts-card form .react-tel-input .form-control:focus {
+  border: 2px solid #FAFAFA;
+}
+.contacts-card form input::-moz-placeholder, .contacts-card form textarea::-moz-placeholder {
+  color: #929292;
+}
+.contacts-card form input::placeholder, .contacts-card form textarea::placeholder {
+  color: #929292;
+}
+.contacts-card form .input-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.contacts-card form textarea {
+  width: 100%;
+  resize: none;
+  height: 180px;
+  margin-bottom: 20px;
+}
+.contacts-card form button {
+  margin-bottom: 12px;
+}
+.contacts-card form span {
+  color: #E64E19;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 6px;
+  display: block;
+}
+.contacts-card form .caption {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.contacts-card form .react-tel-input .form-control {
+  font-family: "Nunito Sans";
+  font-size: 26px;
+  height: 67px;
+}
+.contacts-card form .react-tel-input .flag-dropdown {
+  display: none;
+}
+
+@media (max-width: 1600px) {
+  .contacts-card form .react-tel-input .form-control {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1440px) {
+  .contacts-card {
+    border-radius: 24px;
+  }
+}
+@media (max-width: 1024px) {
+  .contacts-card form .input-group {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .contacts-card {
+    padding: 30px;
+  }
+  .contacts-card form .input-group {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contacts-card form input {
+    height: 52px;
+  }
+  .contacts-card form textarea {
+    height: 140px;
+  }
+  .contacts-card form button, .contacts-card form input, .contacts-card form textarea, .contacts-card form .react-tel-input .form-control {
+    padding: 15px;
+  }
+  .contacts-card form .react-tel-input .form-control {
+    font-size: 17px;
+    height: 52px;
+  }
+}/*# sourceMappingURL=contacts.css.map */

@@ -1,0 +1,86 @@
+@import "../../variables.scss";
+
+.card{
+ &-small{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: $border-radius-sm;
+  &--reverse{
+   flex-direction: column-reverse;
+   justify-content: start;
+   .card-small__img{
+    height: 440px;
+    img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     }
+    }
+    .card-info{
+     padding: 40px 48px 48px;
+    }
+   }
+  img{
+   max-width: 100%;
+   height: 100%;
+   object-fit: cover;
+  }
+ }
+ &-info{
+  padding: 48px;
+ }
+}
+@media (max-width: 1600px){
+ .card{
+  &-info{
+   padding: 38px;
+  }
+  &-small--reverse .card-small__img{
+   height: 380px;
+  }
+ }
+}
+
+
+
+@media (max-width: 1440px){
+ .card{
+  &-small{
+   border-radius: $border-radius-sm-media;
+   &--reverse{
+    .card-small__img{
+    height: 300px;
+    }
+    .card-info{
+     padding-top: 22px;
+    }
+   }
+  }
+ }
+}
+@media (max-width: 1024px){
+ .card{
+  &-info{
+   padding: 30px;
+  }
+  &-small--reverse .card-info{
+   padding: 30px;
+  }
+ }
+}
+
+@media (max-width: 768px){
+ .card{
+  &-small{
+   &--reverse {
+    max-width: 340px;
+   }
+  }
+ }
+}
+@media (max-width: 480px){
+ .card-small__img{
+  height: 220px;
+ }
+}

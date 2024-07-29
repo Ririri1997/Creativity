@@ -1,0 +1,70 @@
+.marque {
+  width: 100%;
+  overflow-x: hidden;
+  background: #FFF;
+}
+.marque-wrapper {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 12px 40px 16px 40px;
+  display: flex;
+  position: relative;
+  width: 1000%;
+}
+.marque-right {
+  left: -5000px;
+}
+.marque:first-of-type {
+  margin-bottom: 20px;
+}
+.marque:last-of-type {
+  margin-bottom: 200px;
+}
+.marque-item {
+  display: flex;
+  align-items: center;
+}
+.marque-item .title {
+  margin: 0 38px;
+  white-space: nowrap;
+}
+.marque-dots {
+  width: 16px;
+  height: 16px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+}
+
+@media (max-width: 1440px) {
+  .marque:last-of-type {
+    margin-bottom: 150px;
+  }
+}
+@media (max-width: 1024px) {
+  .marque:last-of-type {
+    margin-bottom: 100px;
+  }
+  .marque-right {
+    animation: marqueeRight 70s linear infinite;
+  }
+  .marque-left {
+    animation: marqueeLeft 70s linear infinite;
+  }
+}
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}/*# sourceMappingURL=marquee.css.map */

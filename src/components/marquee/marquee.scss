@@ -1,0 +1,75 @@
+@import "../../variables.scss";
+
+.marque {
+ width: 100%;
+ overflow-x: hidden;
+ background: #FFF;
+ &-wrapper{
+  user-select: none;
+  padding: 12px 40px 16px 40px;
+  display: flex;
+  position: relative;
+  width: 1000%;
+ }
+ &-right{
+  left: -5000px;
+ }
+ &:first-of-type {
+  margin-bottom: 20px;
+ }
+ &:last-of-type{
+  margin-bottom: $margin-lg;
+ }
+ &-item {
+  display: flex;
+  align-items: center;
+  .title{
+   margin: 0 38px;
+   white-space: nowrap;
+  }
+ }
+ &-dots{
+  width: 16px;
+  height: 16px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+ }
+}
+@media (max-width: 1440px){
+ .marque:last-of-type{
+  margin-bottom: $margin-md;
+ }
+}
+ 
+@media (max-width: 1024px){
+ .marque{
+  &:last-of-type{
+   margin-bottom: $margin-sm;
+  }
+  &-right {
+   animation: marqueeRight 70s linear infinite;
+  }
+  &-left {
+   animation: marqueeLeft 70s linear infinite;
+  }
+ }
+}
+ 
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
